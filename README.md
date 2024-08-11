@@ -1,27 +1,21 @@
-Hospital Management System
+# Hospital Management System
+Hospital Management System in java.
+This system has a home page from where the administrator can login. On logging in the user can add details of patients and doctors.
 
-A comprehensive Java-based hospital management system designed to streamline clinical, administrative, and financial operations. This project aims to provide a user-friendly interface for managing patient records, appointments, billing, and inventory, ensuring efficient hospital operations and improved patient care.
+## Screenshot
+###### Login Screen
+![alt Login Screen](https://github.com/vivekcsiam/Hospital-Management-System/raw/master/Images/screenshots/Login.png "Login Screen")
+###### Patient Screen
+![alt Patient Screen](https://github.com/vivekcsiam/Hospital-Management-System/raw/master/Images/screenshots/Patient.png "Patient Screen")
 
-Key Features:
 
-- Patient registration and management
-- Appointment scheduling and management
-- Doctor and staff management
-- Billing and insurance management
-- Inventory management
-- Reporting and analytics
+## Installation
+1. Clone or download zip from github repository
+2. Install [MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/3.1.html), on Ubuntu/linux MySQL connector can be installed by `apt-get install libmysql-java` and then add the path of `.jar` file to `CLASSPATH`. On Ubuntu/linux the location of `.jar` file can be added to `CLASSPATH` by adding the following line `export CLASSPATH=".:/usr/share/java/mysql.jar"` to `~/.bashrc` file followed by `source ~/.bashrc`
+3. Create database named `hms` and table `users` with columns `username`, `password`, table `doctors` with columns `DocName`, `Specialisation`, `Address`, `Pnumber`, table `Patients` with columns `Pname`, `Address`, `Pnumber`, `Age`, `Sex`, `Illness` and table `contactus` with columns `email`, `comments`
+4. Navigate to the project folder and run `javac HomePage.java` to compile and `java HomePage` to run the program
 
-Technologies Used:
+## License
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-- Java 8
-- Spring Boot
-- MySQL or Oracle
-- HTML/CSS/JavaScript
-- Swing or JavaFX 
-
-Project Goals:
-
-- Develop a scalable and reliable hospital management system
-- Implement a user-friendly interface for easy data management
-- Ensure data security and privacy
-- Improve hospital operations and patient care
+###### P.S This project is simply a proof of concept done while i was still in school/college. This project is not to be taken seriously and is not production ready.
